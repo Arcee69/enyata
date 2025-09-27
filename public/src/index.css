@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    /* Custom Breakpoints */
+    --breakpoint-xs: 300px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lm: 1024px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-xl: 1436px;
+
+    /* Custom Colors */
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-PRIMARY: #031434;
+
+    --color-NEUTRAL-100: #434854;
+    --color-NEUTRAL-200: #737373;
+    --color-NEUTRAL-300: #0B2253;
+    --color-NEUTRAL-400: #B0B9C8;
+    --color-NEUTRAL-500: #031434;
+
+
+    --color-BLUE-100: #0A74DC;
+
+    --color-GREEN-100: #00992B;
+    --color-GREEN-200: #A9FFE0;
+
+    --color-PURPLE-100: #A9C1FF;
+
+    --color-PINK-100: #FFA9EC;
+
+    --color-YELLOW-100: #FDFFA9;
+
+
+
+
+    /* Custom Font Family */
+    --font-inter: "Inter";
+   
+}
