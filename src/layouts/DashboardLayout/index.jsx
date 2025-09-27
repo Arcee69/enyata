@@ -10,8 +10,7 @@ const DashboardLayout = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  const location = useLocation()
-  const path = location.pathname
+ 
 
   return (
     <div className="flex h-screen  overflow-hidden">

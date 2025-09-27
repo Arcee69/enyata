@@ -3,7 +3,7 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import { CgSpinner } from 'react-icons/cg';
 import { BsEye, BsEyeSlash } from 'react-icons/bs';
-import { useNavigate } from 'react-router-dom'; // Added for navigation
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [loading, setLoading] = useState(false);
