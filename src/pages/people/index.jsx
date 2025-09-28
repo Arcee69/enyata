@@ -12,7 +12,7 @@ const People = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
 
-  const itemsPerPage = people?.length;
+  const itemsPerPage = 10;
   const totalPages = Math.ceil(count / itemsPerPage);
 
   const navigate = useNavigate()
