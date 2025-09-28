@@ -99,7 +99,7 @@ const Login = () => {
                                     <button
                                         className={`${isValid ? 'bg-[#2D84FF]' : 'bg-[#BABABA]'} w-full font-poppins flex items-center cursor-pointer rounded-[6px] justify-center h-[48px] text-base text-center`}
                                         type="submit"
-                                        disabled={!isValid || loading}
+                                        // disabled={!isValid || loading}
                                     >
                                         {loading ? (
                                             <CgSpinner className="animate-spin text-lg text-white" />

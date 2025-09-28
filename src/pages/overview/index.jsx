@@ -20,25 +20,7 @@ const Overview = () => {
 
   const navigate = useNavigate()
 
-  // const getTotalFilms = async () => {
-  //   setLoading(true)
-  //   try {
-  //     const res = await api.get(appUrls?.FILM_URL);
-  //     setTotalFilms(res?.data?.count);
-  //     setFilms(res?.data?.results || []);
-
-  //     if (res?.data?.results?.characters?.length) {
-  //       const characterRequests = res.data.results.characters.map((url) => axios.get(url))
-  //       const characterResponses = await Promise.all(characterRequests)
-  //       setCharacters(characterResponses.map((p) => p.data.name))
-  //     }
-  //   } catch (err) {
-  //     console.log(err, "scope");
-  //   } finally {
-  //      setLoading(false)
-  //   }
-  // };
-
+ 
   const getTotalFilms = async () => {
     setLoading(true);
     try {

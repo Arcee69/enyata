@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 import Woman from "../../assets/png/woman.png"
 
 const PeopleDetails = () => {
-  const [details, setDetails] = useState([])
+    const [details, setDetails] = useState([])
 
     const { state } = useLocation()
 
