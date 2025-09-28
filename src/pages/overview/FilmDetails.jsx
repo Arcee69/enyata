@@ -13,7 +13,6 @@ const FilmDetails = () => {
     const getDetails = async () => {
         try {
             const res = await axios.get(`${state}`)
-            console.log(res, "mushu")
             setDetails(res?.data || [])
         } catch (err) {
             console.log(err, "misk")
