@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
 
@@ -22,6 +23,10 @@
     --color-NEUTRAL-300: #0B2253;
     --color-NEUTRAL-400: #B0B9C8;
     --color-NEUTRAL-500: #031434;
+    --color-NEUTRAL-600: #333758;
+    --color-NEUTRAL-700: #303B54;
+    --color-NEUTRAL-800: #E5E5E5;
+    --color-NEUTRAL-900: #A4A7B7;
 
 
     --color-BLUE-100: #0A74DC;
@@ -40,5 +45,6 @@
 
     /* Custom Font Family */
     --font-inter: "Inter";
+    --font-karla: "Karla";
    
 }

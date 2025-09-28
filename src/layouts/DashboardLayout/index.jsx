@@ -18,18 +18,18 @@ const DashboardLayout = () => {
       
       <div className={`fixed top-0 left-0 h-full bg-[#fff] z-50 transition-transform duration-300 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } lg:translate-x-0 lg:w-[16%]`}>
+      } lg:translate-x-0 lg:w-[17rem]`}>
         <Sidebar closeSidebar={() => setSidebarOpen(false)} />
       </div>
 
       {/* Main Content Area */}
-      <div className={`lg:w-[84%] lg:ml-[16%] flex flex-col w-full  h-full`}>
+      <div className={`lg:w-[73.313rem] lg:ml-[17rem] flex flex-col  h-full`}>
         {/* Fixed Header */}
         <div className={`fixed top-0 w-full  z-50 bg-white shadow-sm`}>
           <Header toggleSidebar={toggleSidebar} />
         </div>
 
-        <div className="flex-1 mt-[72px] bg-[#fcfcfc] p-6">
+        <div className="flex-1  overflow-y-auto bg-white pr-[42px] pl-[38px]">
           <Outlet />
         </div>
       </div>

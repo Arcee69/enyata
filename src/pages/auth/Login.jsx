@@ -50,14 +50,15 @@ const Login = () => {
                     {({ handleSubmit, handleChange, isValid, errors, touched, values }) => (
                         <Form onSubmit={handleSubmit} className="flex justify-center">
                             <div className="flex flex-col w-[335px] gap-8">
-                                <div className="flex flex-col w-full">
+                                <div className="flex flex-col w-full relative">
+                                    <label className='absolute font-inter font-medium text-NEUTRAL-400 text-xs left-2 z-10 bg-white px-1 -top-2 '>Email Address</label>
                                     <input
                                         name="email"
                                         placeholder="Your Email"
                                         type="text"
                                         value={values.email}
                                         onChange={handleChange}
-                                        className="outline-BLUE-100 bg-white w-full text-NEUTRAL-300 font-inter text-sm rounded-sm border border-NEUTRAL-100 p-2 h-[48px] border-solid"
+                                        className="outline-BLUE-100 bg-white w-full text-NEUTRAL-300 font-inter text-sm rounded-sm border border-NEUTRAL-900 px-3 py-2 h-[48px] border-solid"
                                     />
                                     {errors.email && touched.email && (
                                         <div className="text-red-500 text-xs">{errors.email}</div>
@@ -67,13 +68,14 @@ const Login = () => {
                                 <div style={{ minHeight: '48px' }}>
                                     <div className="flex flex-col w-full">
                                         <div className="relative">
+                                            <label className='absolute font-inter font-medium text-NEUTRAL-400 text-xs left-2 z-10 bg-white px-1 -top-2 '>Password</label>
                                             <input
                                                 name="password"
                                                 placeholder="Password"
                                                 type={showPassword ? 'text' : 'password'}
                                                 value={values.password}
                                                 onChange={handleChange}
-                                                className="outline-BLUE-100 bg-white w-full text-NEUTRAL-300 font-inter text-sm rounded-sm border border-NEUTRAL-100 p-2 h-[48px] border-solid"
+                                                className="outline-BLUE-100 bg-white w-full text-NEUTRAL-300 font-inter text-sm rounded-sm border border-NEUTRAL-900 px-3 py-2 h-[48px] border-solid"
                                             />
                                             {showPassword ? (
                                                 <BsEyeSlash
